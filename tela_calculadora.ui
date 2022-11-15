@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>535</width>
+    <width>630</width>
     <height>633</height>
    </rect>
   </property>
@@ -14,7 +14,7 @@
    <string>Calculadora</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-color: #d8d8d8;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -44,7 +44,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: white;</string>
+       <string notr="true">background-color: #d8d8d8;</string>
       </property>
       <property name="text">
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;CALCULADORA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -54,7 +54,7 @@
     <item>
      <widget class="QWidget" name="widget" native="true">
       <property name="styleSheet">
-       <string notr="true">background-color: white;</string>
+       <string notr="true">background-color: #d8d8d8;</string>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
@@ -62,7 +62,7 @@
          <property name="maximumSize">
           <size>
            <width>350</width>
-           <height>605</height>
+           <height>610</height>
           </size>
          </property>
          <property name="layoutDirection">
@@ -73,62 +73,59 @@
 border-radius: 12px;</string>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="3" column="0">
-           <widget class="QPushButton" name="btn_subtrair">
+          <item row="0" column="0" colspan="4">
+           <widget class="QLabel" name="label_display">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="minimumSize">
              <size>
-              <width>50</width>
-              <height>50</height>
+              <width>0</width>
+              <height>0</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>65</width>
-              <height>55</height>
+              <width>600</width>
+              <height>100</height>
              </size>
             </property>
             <property name="font">
              <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
+              <family>Calibri</family>
+              <pointsize>24</pointsize>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
+             <string notr="true">background-color: #697887;
+border: 1px solid #646464;
+color: white;</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::ImhPreferNumbers</set>
             </property>
             <property name="text">
-             <string>-</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="margin">
+             <number>30</number>
+            </property>
+            <property name="indent">
+             <number>-1</number>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextSelectableByMouse</set>
             </property>
            </widget>
           </item>
-          <item row="2" column="0">
-           <widget class="QPushButton" name="btn_multiplicar">
+          <item row="1" column="0">
+           <widget class="QPushButton" name="btn_dividir">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
               <horstretch>0</horstretch>
@@ -171,7 +168,7 @@ background-color: #b4ccd0;
 </string>
             </property>
             <property name="text">
-             <string>*</string>
+             <string>/</string>
             </property>
             <property name="iconSize">
              <size>
@@ -235,114 +232,6 @@ background-color: #b4ccd0;
             </property>
            </widget>
           </item>
-          <item row="5" column="2">
-           <widget class="QPushButton" name="btn_ponto">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>.</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QPushButton" name="btn_dois">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>2</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
           <item row="1" column="2">
            <widget class="QPushButton" name="btn_positivoNegativo">
             <property name="sizePolicy">
@@ -397,60 +286,6 @@ background-color: #b4ccd0;
             </property>
            </widget>
           </item>
-          <item row="5" column="3">
-           <widget class="QPushButton" name="btn_zero">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
           <item row="1" column="3">
            <widget class="QPushButton" name="btn_C">
             <property name="sizePolicy">
@@ -461,8 +296,8 @@ background-color: #b4ccd0;
             </property>
             <property name="minimumSize">
              <size>
-              <width>40</width>
-              <height>40</height>
+              <width>50</width>
+              <height>50</height>
              </size>
             </property>
             <property name="maximumSize">
@@ -505,8 +340,8 @@ background-color: #b4ccd0;
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
-           <widget class="QPushButton" name="btn_seis">
+          <item row="2" column="0">
+           <widget class="QPushButton" name="btn_multiplicar">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
               <horstretch>0</horstretch>
@@ -549,223 +384,7 @@ background-color: #b4ccd0;
 </string>
             </property>
             <property name="text">
-             <string>6</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QPushButton" name="btn_igual">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>=</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="3">
-           <widget class="QPushButton" name="btn_um">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>1</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QPushButton" name="btn_tres">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>3</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="3">
-           <widget class="QPushButton" name="btn_quatro">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>4</string>
+             <string>*</string>
             </property>
             <property name="iconSize">
              <size>
@@ -829,6 +448,60 @@ background-color: #b4ccd0;
             </property>
            </widget>
           </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="btn_oito">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>65</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>8</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
           <item row="2" column="3">
            <widget class="QPushButton" name="btn_sete">
             <property name="sizePolicy">
@@ -874,6 +547,114 @@ background-color: #b4ccd0;
             </property>
             <property name="text">
              <string>7</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="btn_subtrair">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>65</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="btn_seis">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>65</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>6</string>
             </property>
             <property name="iconSize">
              <size>
@@ -937,8 +718,8 @@ background-color: #b4ccd0;
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QPushButton" name="btn_dividir">
+          <item row="3" column="3">
+           <widget class="QPushButton" name="btn_quatro">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
               <horstretch>0</horstretch>
@@ -981,61 +762,7 @@ background-color: #b4ccd0;
 </string>
             </property>
             <property name="text">
-             <string>/</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QPushButton" name="btn_oito">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>65</width>
-              <height>55</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial Narrow</family>
-              <pointsize>20</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-border: 1px solid #5DA8B1;
-background-color: #5DA8B1;
-}
-
-QPushButton:pressed{
-border-left: 1px solid;
-	border-left-color: #565656;
-border-top: 1px solid;
-	border-top-color: #565656;
-border-right: transparent;
-border-bottom: transparent;
-background-color: #b4ccd0;
-}
-</string>
-            </property>
-            <property name="text">
-             <string>8</string>
+             <string>4</string>
             </property>
             <property name="iconSize">
              <size>
@@ -1099,54 +826,329 @@ background-color: #b4ccd0;
             </property>
            </widget>
           </item>
-          <item row="0" column="0" colspan="4">
-           <widget class="QLabel" name="label_display">
+          <item row="4" column="1">
+           <widget class="QPushButton" name="btn_tres">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="minimumSize">
              <size>
-              <width>0</width>
-              <height>0</height>
+              <width>50</width>
+              <height>50</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>600</width>
-              <height>100</height>
+              <width>65</width>
+              <height>55</height>
              </size>
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
-              <pointsize>24</pointsize>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: #697887;
-border: 1px solid #646464;
-color: white;</string>
-            </property>
-            <property name="inputMethodHints">
-             <set>Qt::ImhPreferNumbers</set>
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>3</string>
             </property>
-            <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
             </property>
-            <property name="margin">
-             <number>30</number>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="btn_dois">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
-            <property name="indent">
-             <number>-1</number>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
             </property>
-            <property name="textInteractionFlags">
-             <set>Qt::TextSelectableByMouse</set>
+            <property name="maximumSize">
+             <size>
+              <width>65</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>2</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="btn_um">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>65</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="QPushButton" name="btn_igual">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>170</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #ff7e15;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>=</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QPushButton" name="btn_ponto">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>65</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>.</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QPushButton" name="btn_zero">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>65</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Narrow</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: 1px solid #5DA8B1;
+background-color: #5DA8B1;
+}
+
+QPushButton:pressed{
+border-left: 1px solid;
+	border-left-color: #565656;
+border-top: 1px solid;
+	border-top-color: #565656;
+border-right: transparent;
+border-bottom: transparent;
+background-color: #b4ccd0;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -1161,7 +1163,7 @@ color: white;</string>
       <property name="maximumSize">
        <size>
         <width>1600</width>
-        <height>1600</height>
+        <height>50</height>
        </size>
       </property>
       <property name="styleSheet">

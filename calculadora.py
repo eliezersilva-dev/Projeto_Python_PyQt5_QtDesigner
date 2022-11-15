@@ -1,4 +1,4 @@
-from PyQt5 import uic,  QtWidgets, QtGui
+from PyQt5 import uic, QtWidgets, QtGui
 
 valores = ''
 
@@ -12,7 +12,9 @@ def limpar_tela():
 def botao_neg_pos():
     global valores
     sinal_neg = '-'
-    if valores[0] != '-':
+    if valores == '':
+        pass
+    elif valores[0] != '-':
         valores = sinal_neg + valores
     elif valores[0] == '-':
         valores = valores[1:]
@@ -23,7 +25,6 @@ def botao_del():
     global valores
     valores = valores[:-1]
     tela_calculadora.label_display.setText(valores)
-    print(valores)
 
 
 def botao_dividir():
@@ -162,7 +163,6 @@ tela_calculadora = uic.loadUi('tela_calculadora.ui')
 tela_calculadora.setWindowIcon(QtGui.QIcon('imagens/calculadora-icon.png'))
 tela_calculadora.setWindowTitle('Calculadora')
 
-
 tela_calculadora.btn_C.clicked.connect(limpar_tela)
 tela_calculadora.btn_positivoNegativo.clicked.connect(botao_neg_pos)
 tela_calculadora.btn_del.clicked.connect(botao_del)
@@ -183,7 +183,6 @@ tela_calculadora.btn_zero.clicked.connect(botao_zero)
 tela_calculadora.btn_ponto.clicked.connect(botao_ponto)
 tela_calculadora.btn_igual.clicked.connect(botao_igual)
 tela_calculadora.btn_voltar.clicked.connect(botao_voltar)
-
 
 tela_calculadora.show()
 app.exec()
