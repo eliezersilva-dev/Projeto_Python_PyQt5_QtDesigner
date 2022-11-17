@@ -155,6 +155,9 @@ def botao_igual():
 
 
 def botao_voltar():
+    import main
+    main.tela_main.show()
+    app.exec()
     tela_calculadora.close()
 
 

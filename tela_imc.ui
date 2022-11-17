@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>427</width>
+    <width>428</width>
     <height>579</height>
    </rect>
   </property>
@@ -68,6 +68,9 @@ color: white;</string>
       </item>
       <item>
        <widget class="QLineEdit" name="txt_peso">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
           <horstretch>0</horstretch>
@@ -82,23 +85,28 @@ color: white;</string>
         </property>
         <property name="maximumSize">
          <size>
-          <width>120</width>
+          <width>80</width>
           <height>29</height>
          </size>
         </property>
         <property name="font">
          <font>
           <pointsize>12</pointsize>
+          <strikeout>false</strikeout>
+          <kerning>true</kerning>
          </font>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhPreferNumbers|Qt::ImhSensitiveData</set>
+        </property>
         <property name="text">
          <string/>
         </property>
         <property name="maxLength">
-         <number>9</number>
+         <number>5</number>
         </property>
         <property name="cursorPosition">
          <number>0</number>
@@ -174,7 +182,7 @@ color: white;</string>
         </property>
         <property name="maximumSize">
          <size>
-          <width>120</width>
+          <width>80</width>
           <height>29</height>
          </size>
         </property>
@@ -190,7 +198,7 @@ color: white;</string>
          <string/>
         </property>
         <property name="maxLength">
-         <number>9</number>
+         <number>5</number>
         </property>
         <property name="alignment">
          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -261,6 +269,12 @@ border-bottom: 1px solid;
 
 </string>
         </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
         <property name="text">
          <string extracomment=" ">  IMC: </string>
         </property>
@@ -318,7 +332,7 @@ border-bottom: 1px solid;
 </string>
         </property>
         <property name="text">
-         <string>  Mensagem</string>
+         <string>  Classificação:</string>
         </property>
         <property name="margin">
          <number>2</number>

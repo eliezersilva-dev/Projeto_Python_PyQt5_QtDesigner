@@ -9,10 +9,14 @@ def chamar_calculadora():
     import calculadora
     calculadora.tela_calculadora.show()
     calculadora.app.exec()
+    tela_main.close()
 
 
 def chamar_imc():
-    print('chamei imc :)')
+    import imc
+    imc.tela_imc.show()
+    imc.app.exec()
+    tela_main.close()
 
 
 app = QtWidgets.QApplication([])
