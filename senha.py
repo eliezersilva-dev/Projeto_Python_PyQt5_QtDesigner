@@ -9,7 +9,7 @@ def exibir_senha():
     import random
 
     if geral == '':
-        QMessageBox.about(tela_senha, 'Alerta', 'Insira valores.')
+        QMessageBox.about(tela_senha, 'Alerta', 'Marque ao menos uma caixa.')
     else:
         quantidade_caracteres = int(tela_senha.label_qtd_caractere.currentText())
         senha = random.choices(geral, k=quantidade_caracteres)
