@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>427</width>
-    <height>579</height>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -272,7 +272,7 @@ border-radius: 2px</string>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="label_imagem_cadeado">
         <property name="minimumSize">
          <size>
           <width>50</width>
@@ -285,8 +285,11 @@ border-radius: 2px</string>
           <height>50</height>
          </size>
         </property>
+        <property name="styleSheet">
+         <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/imagens/senha-imagem.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/imagem/senha-imagem.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;img&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -316,7 +319,7 @@ border-radius: 2px</string>
         </property>
         <property name="font">
          <font>
-          <pointsize>16</pointsize>
+          <pointsize>12</pointsize>
          </font>
         </property>
         <property name="styleSheet">
@@ -329,6 +332,9 @@ border-radius: 2px;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
         </property>
        </widget>
       </item>
@@ -370,7 +376,7 @@ border-radius: 2px;</string>
           </property>
           <property name="maximumSize">
            <size>
-            <width>1600</width>
+            <width>80</width>
             <height>16777215</height>
            </size>
           </property>
@@ -518,8 +524,6 @@ border-radius: 2px
    </layout>
   </widget>
  </widget>
- <resources>
-  <include location="imagens/img.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -5,6 +5,13 @@ def chamar_sobre():
     print('cliquei em sobre')
 
 
+def chamar_gerar_senha():
+    import senha
+    senha.tela_senha.show()
+    senha.app.exec()
+    tela_main.close()
+
+
 def chamar_calculadora():
     import calculadora
     calculadora.tela_calculadora.show()
@@ -27,6 +34,7 @@ tela_main.setWindowTitle('Projetos Python')
 tela_main.btn_sobre.clicked.connect(chamar_sobre)
 tela_main.btn_calculadora.clicked.connect(chamar_calculadora)
 tela_main.btn_imc.clicked.connect(chamar_imc)
+tela_main.btn_gerarSenha.clicked.connect(chamar_gerar_senha)
 
 tela_main.show()
 app.exec()
