@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7587e5af-630b-41b0-8586-6d3a4cfa2355" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/senha.py" beforeDir="false" afterPath="$PROJECT_DIR$/senha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lista.py" beforeDir="false" afterPath="$PROJECT_DIR$/lista.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tela_lista.ui" beforeDir="false" afterPath="$PROJECT_DIR$/tela_lista.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,9 +120,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.Projeto Python" />
       <item itemvalue="Python.lista" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.Projeto Python" />
       <item itemvalue="Python.senha" />
     </list>
     <recent_temporary>

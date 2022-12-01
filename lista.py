@@ -15,27 +15,28 @@ def excluir():
 def limpar():
     tela_lista.listWidget.clear()
 
-# *********************
-# ponto de controle: implementar função marcar
-# def marcar():
-#     print('Marcado!')
-#     item = tela_lista.listWidget.takeItem(tela_lista.listWidget.currentRow())
-#     riscado = item.text()
-#     item = None
-#     print('item None ok')
-#     print(riscado)
-#     tela_lista.listWidget.takeItem(tela_lista.listWidget.currentRow(addItem('teste')))
+
+def marcar():
+    try:
+        item = tela_lista.listWidget.takeItem(tela_lista.listWidget.currentRow())
+        f = item.font()
+        f.setStrikeOut(True)
+        item.setFont(f)
+        texto = item
+        item = None
+        tela_lista.listWidget.insertItem(tela_lista.listWidget.currentRow(), texto)
+    except:
+        pass
 
 
-    # riscado = riscado.setStrikeOut(True)
-    # item.setFont(riscado)
-    # print(item.font())
-    # f = item.font()
-    # f.setStrikeOut(True)
-    # item.setFont(f)
-    # font('text-decoration: line-through')
-
-
+def desmarcar():
+    try:
+        item = tela_lista.listWidget.takeItem(tela_lista.listWidget.currentRow())
+        texto = item.text()
+        item = None
+        tela_lista.listWidget.insertItem(tela_lista.listWidget.currentRow(), texto)
+    except:
+        pass
 
 
 app = QtWidgets.QApplication([])
@@ -47,6 +48,7 @@ tela_lista.btn_adicionar.clicked.connect(adicionar)
 tela_lista.btn_excluir.clicked.connect(excluir)
 tela_lista.btn_limpar.clicked.connect(limpar)
 tela_lista.btn_marcar.clicked.connect(marcar)
+tela_lista.btn_desmarcar.clicked.connect(desmarcar)
 
 tela_lista.show()
 app.exec()
