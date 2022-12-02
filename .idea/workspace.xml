@@ -4,7 +4,10 @@
     <list default="true" id="7587e5af-630b-41b0-8586-6d3a4cfa2355" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lista.py" beforeDir="false" afterPath="$PROJECT_DIR$/lista.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/senha.py" beforeDir="false" afterPath="$PROJECT_DIR$/senha.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tela_lista.ui" beforeDir="false" afterPath="$PROJECT_DIR$/tela_lista.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tela_main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/tela_main.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +35,43 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/calculadora.py" />
   </component>
-  <component name="RunManager" selected="Python.lista">
-    <configuration name="Projeto Python" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.senha">
+    <configuration name="calculadora" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Almerinda Home\AppData\Local\Programs\Python\Python310\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calculadora.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="imc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Almerinda Home\AppData\Local\Programs\Python\Python310\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,17 +144,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Projeto Python" />
       <item itemvalue="Python.lista" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.senha" />
+      <item itemvalue="Python.calculadora" />
+      <item itemvalue="Python.imc" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lista" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.senha" />
-        <item itemvalue="Python.Projeto Python" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.lista" />
+        <item itemvalue="Python.imc" />
+        <item itemvalue="Python.calculadora" />
       </list>
     </recent_temporary>
   </component>
