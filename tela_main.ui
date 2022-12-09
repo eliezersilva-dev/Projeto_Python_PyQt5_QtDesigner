@@ -248,6 +248,8 @@ border-radius: 5px;
          <property name="font">
           <font>
            <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
@@ -279,7 +281,7 @@ border-radius: 10px;
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_16">
+        <widget class="QPushButton" name="btn_telaLogin">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -295,6 +297,8 @@ border-radius: 10px;
          <property name="font">
           <font>
            <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
@@ -321,7 +325,7 @@ border-radius: 10px;
 </string>
          </property>
          <property name="text">
-          <string>none</string>
+          <string>Tela Login</string>
          </property>
         </widget>
        </item>
@@ -342,6 +346,8 @@ border-radius: 10px;
          <property name="font">
           <font>
            <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
@@ -389,6 +395,8 @@ border-radius: 10px;
          <property name="font">
           <font>
            <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
@@ -436,6 +444,8 @@ border-radius: 10px;
          <property name="font">
           <font>
            <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
@@ -483,6 +493,8 @@ border-radius: 10px;
          <property name="font">
           <font>
            <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">

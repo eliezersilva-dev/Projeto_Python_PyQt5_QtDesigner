@@ -13,55 +13,526 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btn_cadastrar">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>260</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Cadastrar</string>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="listWidget">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>20</y>
-      <width>256</width>
-      <height>192</height>
-     </rect>
-    </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <property name="text">
-      <string>Nome               Senha</string>
-     </property>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Palatino Linotype</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 170, 255);
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+      </property>
+      <property name="text">
+       <string>Tela Login</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string/>
-     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="widget_imagem_cadeado" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+border-left:  1px solid;
+	border-left-color: #6a6a6a;
+border-top:  1px solid;
+	border-top-color: #6a6a6a;
+background-color: rgb(222, 222, 222);
+border-radius: 3px
+
+
+
+
+
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>130</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #2d2d2d;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+border-left:  1px solid;
+	border-left-color: #6a6a6a;
+border-top:  1px solid;
+	border-top-color: #6a6a6a;
+background-color: rgb(222, 222, 222);
+border-radius: 3px
+
+
+
+
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Nome           Senha</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Maria          123456</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>João             abcde</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rose            1a2b3c</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <property name="text">
-      <string>Maria                123456</string>
-     </property>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QWidget" name="widget_imagem_usuario" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_usuario">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #2d2d2d;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+border-left:  1px solid;
+	border-left-color: #6a6a6a;
+border-top:  1px solid;
+	border-top-color: #6a6a6a;
+background-color: rgb(222, 222, 222);
+border-radius: 3px
+
+
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>USUÁRIO</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QWidget" name="widget_imagem_login" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_senha">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #2d2d2d;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+border-left:  1px solid;
+	border-left-color: #6a6a6a;
+border-top:  1px solid;
+	border-top-color: #6a6a6a;
+background-color: rgb(222, 222, 222);
+border-radius: 3px
+
+
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>SENHA</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_login">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+color: #black;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+background-color: rgb(170, 170, 255);
+border-radius: 2px
+}
+
+QPushButton:pressed{
+color: black;
+border-left: 1px solid;
+	border-left-color: #c3c3c3;
+border-top: 1px solid;
+	border-top-color:#c3c3c3;
+border-right: transparent;
+border-bottom: transparent;
+background-color: rgb(240, 240, 240);
+border-radius: 2px
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string>Login</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_cadastrar">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+color: black;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+background-color: rgb(170, 170, 255);
+border-radius: 3px
+}
+
+QPushButton:pressed{
+color: black;
+border-left: 1px solid;
+	border-left-color: #c3c3c3;
+border-top: 1px solid;
+	border-top-color:#c3c3c3;
+border-right: transparent;
+border-bottom: transparent;
+background-color: rgb(240, 240, 240);
+border-radius: 3px
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string>Cadastrar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string>João                  abcde</string>
-     </property>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 170, 255);
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="styleSheet">
+            <string notr="true">background: transparent;
+border: transparent;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="styleSheet">
+            <string notr="true">background: transparent;
+border: transparent;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_voltar">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+color: black;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+background-color: rgb(240, 240, 240);
+border-radius: 1px
+}
+
+QPushButton:pressed{
+color: black;
+border-left: 1px solid;
+	border-left-color: #c3c3c3;
+border-top: 1px solid;
+	border-top-color:#c3c3c3;
+border-right: transparent;
+border-bottom: transparent;
+background-color: rgb(240, 240, 240);
+border-radius: 1px
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string>Voltar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
     </item>
-    <item>
-     <property name="text">
-      <string>Rose                 1a2b3c</string>
-     </property>
-    </item>
-   </widget>
+   </layout>
   </widget>
  </widget>
  <resources/>
