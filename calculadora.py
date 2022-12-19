@@ -143,8 +143,7 @@ def botao_ponto():
     global valores
     tela_calculadora.label_display.setText('.')
     if len(valores) <= 14:
-        if '.' not in valores:
-            valores += tela_calculadora.label_display.text()
+        valores += tela_calculadora.label_display.text()
     tela_calculadora.label_display.setText(valores)
 
 
