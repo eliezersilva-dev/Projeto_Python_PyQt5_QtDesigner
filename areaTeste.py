@@ -8,6 +8,23 @@ import requests
 
 
 
+
+# api GoogleNews - pip install GoogleNews
+# from GoogleNews import GoogleNews
+# noticias = GoogleNews(period='d')
+# noticias.setlang('pt')
+# noticias.search('petroleo')
+# resultado = noticias.results()
+# print(resultado)
+# noticia1 = resultado[0]
+# print(noticia1['desc'])
+# print(noticia1['link'])
+# noticia1 = resultado[1]
+# print(noticia1['desc'])
+# print(noticia1['link'])
+
+
+
 # api cotações moedas
 # cotacoes = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
 # cotacoes = cotacoes.json()
@@ -25,6 +42,8 @@ import requests
 # btc = str(cotacoes['BTCBRL']['bid'])
 # print('Bitcoin')
 # print(f'{btc} mil reais')
+
+
 
 
 
