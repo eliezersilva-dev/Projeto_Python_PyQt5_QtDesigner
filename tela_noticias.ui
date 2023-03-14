@@ -42,44 +42,6 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QScrollArea" name="scrollArea">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>480</y>
-      <width>411</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOn</enum>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>-1058</x>
-       <y>0</y>
-       <width>2103</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </widget>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
@@ -110,13 +72,435 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btn_voltar">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>30</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>Voltar</string>
          </property>
         </widget>
        </item>
       </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_noticias">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>411</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Baskerville Old Face</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>Notícias </string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>CAPITAIS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Aracaju</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Belém</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Belo Horizonte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Brasília</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Boa Vista</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Campo Grande</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cuiabá</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Curitiba</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fortaleza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Florianópolis</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Goiânia</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>João Pessoa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Macapá</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Maceió</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Manaus</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Natal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Palmas</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Porto Velho</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Recife</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rio Branco</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rio de Janeiro</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Salvador</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>São Luís</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>São Paulo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Teresina</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vitória</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_atualizar">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: #black;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+background-color: rgb(170, 170, 255);
+border-radius: 2px
+}
+
+QPushButton:pressed{
+color: black;
+border-left: 1px solid;
+	border-left-color: #c3c3c3;
+border-top: 1px solid;
+	border-top-color:#c3c3c3;
+border-right: transparent;
+border-bottom: transparent;
+background-color: rgb(240, 240, 240);
+border-radius: 2px
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Atualizar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_capital_estado">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>60</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bookman Old Style</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Capital/Estado&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_previsao">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>90</y>
+      <width>171</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Baskerville Old Face</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>Previsão Tempo</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_data_hora">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>90</y>
+      <width>81</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Baskerville Old Face</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>Data/Hora</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_proverbio">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>470</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>Provérbio</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_tempo">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: #black;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+background-color: rgb(170, 170, 255);
+border-radius: 2px
+}
+
+QPushButton:pressed{
+color: black;
+border-left: 1px solid;
+	border-left-color: #c3c3c3;
+border-top: 1px solid;
+	border-top-color:#c3c3c3;
+border-right: transparent;
+border-bottom: transparent;
+background-color: rgb(240, 240, 240);
+border-radius: 2px
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Tempo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
