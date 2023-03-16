@@ -140,10 +140,10 @@ tela_noticias.btn_tempo.clicked.connect(previsao_capital)
 tela_noticias.btn_atualizar.clicked.connect(chamar_atualizar)
 tela_noticias.btn_voltar.clicked.connect(botao_voltar)
 
+tela_noticias.show()
+app.exec()
+
 buscar_noticias()
 montar_listas_capitais()
 buscar_cotacao()
 montar_proverbios()
-
-tela_noticias.show()
-app.exec()

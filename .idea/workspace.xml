@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7587e5af-630b-41b0-8586-6d3a4cfa2355" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticias.py" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
       <recent name="C:\Users\Almerinda Home\Desktop\Cursos Python\PythonDiversos\Projeto Python\arquivos" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.login">
+  <component name="RunManager" selected="Python.main">
     <configuration name="areaTeste" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,8 +155,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.login" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.login" />
         <item itemvalue="Python.noticias" />
         <item itemvalue="Python.calculadora" />
         <item itemvalue="Python.areaTeste" />

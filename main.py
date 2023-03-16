@@ -1,4 +1,5 @@
 from PyQt5 import uic, QtWidgets, QtGui
+from PyQt5.QtWidgets import QMessageBox
 
 
 def chamar_calculadora():
