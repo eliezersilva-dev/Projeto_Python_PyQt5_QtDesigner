@@ -1,4 +1,5 @@
 from PyQt5 import uic, QtWidgets, QtGui
+from PyQt5.QtWidgets import QMessageBox
 
 valores = ''
 
@@ -149,8 +150,13 @@ def botao_ponto():
 
 def botao_igual():
     global valores
-    valores = str(eval(valores))
-    tela_calculadora.label_display.setText(valores)
+
+    try:
+        valores = str(eval(valores))
+    except:
+        QMessageBox.about(tela_calculadora, 'Erro!', 'Revise os valores.')
+    finally:
+        tela_calculadora.label_display.setText(valores)
 
 
 def botao_voltar():

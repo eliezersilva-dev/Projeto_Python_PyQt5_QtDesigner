@@ -482,7 +482,10 @@ color: rgb(255, 255, 255);
 border-radius: 5px;</string>
          </property>
          <property name="text">
-          <string>   By Lorem Lorem </string>
+          <string>eliezersilva.dev@gmail.com</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
         </widget>
        </item>

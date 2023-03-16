@@ -36,8 +36,10 @@ def chamar_tela_login():
     tela_main.close()
 
 
-def chamar_tela_noticia():
-    login.app.exec()
+def chamar_tela_noticias():
+    import noticias
+    noticias.tela_noticias.show()
+    noticias.app.exec()
     tela_main.close()
 
 
@@ -51,7 +53,7 @@ tela_main.btn_imc.clicked.connect(chamar_imc)
 tela_main.btn_gerarSenha.clicked.connect(chamar_gerar_senha)
 tela_main.btn_lista.clicked.connect(chamar_lista)
 tela_main.btn_telaLogin.clicked.connect(chamar_tela_login)
-tela_main.btn_noticias.clicked.connect(chamar_tela_noticia)
+tela_main.btn_noticias.clicked.connect(chamar_tela_noticias)
 
 tela_main.show()
 app.exec()

@@ -27,6 +27,8 @@ def cadastrar():
 
     if usuario == '' or senha == '':
         QMessageBox.about(tela_login, 'Alerta', 'Insira usuário e senha.')
+    if usuario in usuarios:
+        QMessageBox.about(tela_login, 'Alerta', 'Usuário já Cadastrado.')
     else:
         tela_login.lineEdit_usuario.setText('')
         tela_login.lineEdit_senha.setText('')
