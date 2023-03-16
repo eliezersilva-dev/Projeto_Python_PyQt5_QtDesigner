@@ -9,10 +9,13 @@ from time import sleep
 import json
 from datetime import date, datetime
 import requests
+import random
 
 global textos
 global capitais
 global estados
+global cotacao
+global proverbios
 
 
 def buscar_noticias():
@@ -35,12 +38,6 @@ def buscar_noticias():
         textos.append(i.text)
 
 
-def chamar_atualizar():
-    import random
-    print(textos[random.choice(range(len(textos)))])
-    tela_noticias.label_noticias.setText(textos[random.choice(range(len(textos)))])
-
-
 def montar_listas_capitais():
     global capitais
     global estados
@@ -52,6 +49,36 @@ def montar_listas_capitais():
         estados = arquivo_capitais.read()
         estados = json.loads(estados)
         print(estados)
+
+
+def buscar_cotacao():
+    global cotacao
+    cotacoes = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
+    cotacoes = cotacoes.json()
+
+    dolar = str(cotacoes['USDBRL']['bid'])
+    dolar = dolar.replace('.', ',')
+    print('Dolar Americano')
+    print(f'R$ {dolar}')
+
+    euro = str(cotacoes['EURBRL']['bid'])
+    euro = euro.replace('.', ',')
+    print('Euro')
+    print(f'R$ {euro}')
+
+    btc = str(cotacoes['BTCBRL']['bid'])
+    print('Bitcoin')
+    print(f'{btc} mil reais')
+
+    cotacao = f'Dólar Americano: R$ {dolar} - Euro: R$ {euro} - Bitcoin {btc} mil reais'
+    print(cotacao)
+
+
+def montar_proverbios():
+    global proverbios
+    with open('arquivos/proverbios.txt', 'r', encoding="utf8") as arquivo:
+        proverbios = arquivo.readlines()
+        print(random.choice(proverbios))
 
 
 def previsao_capital():
@@ -108,6 +135,18 @@ def previsao_capital():
                                                f'{data_hora.hour}:{data_hora.minute}'))
 
 
+def chamar_atualizar():
+    print(textos[random.choice(range(len(textos)))])
+    print(cotacao)
+    tela_noticias.label_noticias.setText(textos[random.choice(range(len(textos)))])
+    tela_noticias.label_cotacao.setText(cotacao)
+    tela_noticias.label_proverbio.setText(proverbios[random.choice(range(len(proverbios)))])
+
+
+def botao_voltar():
+    import main
+    main.tela_main.show()
+    app.exec()
 
 
 app = QtWidgets.QApplication([])
@@ -115,11 +154,14 @@ tela_noticias = uic.loadUi('tela_noticias.ui')
 tela_noticias.setWindowTitle('Notícias')
 tela_noticias.setWindowIcon(QtGui.QIcon('imagens/informativo_icon.png'))
 
-tela_noticias.btn_atualizar.clicked.connect(chamar_atualizar)
 tela_noticias.btn_tempo.clicked.connect(previsao_capital)
+tela_noticias.btn_atualizar.clicked.connect(chamar_atualizar)
+tela_noticias.btn_voltar.clicked.connect(botao_voltar)
 
 buscar_noticias()
 montar_listas_capitais()
+buscar_cotacao()
+montar_proverbios()
 
 tela_noticias.show()
 app.exec()

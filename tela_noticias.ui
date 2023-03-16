@@ -14,304 +14,376 @@
    <string>MainWindow</string>
   </property>
   <property name="autoFillBackground">
-   <bool>true</bool>
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(227, 227, 227);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>-1</y>
-      <width>431</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Algerian</family>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Notícias do Dia</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>530</y>
-      <width>431</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 255);</string>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="label_3">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Algerian</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #043654</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Notícias do Dia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>135</width>
+          <height>0</height>
+         </size>
+        </property>
+        <item>
          <property name="text">
-          <string>TextLabel</string>
+          <string>CAPITAIS</string>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_2">
+        </item>
+        <item>
          <property name="text">
-          <string>TextLabel</string>
+          <string>Aracaju</string>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_voltar">
-         <property name="minimumSize">
-          <size>
-           <width>80</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>30</height>
-          </size>
-         </property>
+        </item>
+        <item>
          <property name="text">
-          <string>Voltar</string>
+          <string>Belém</string>
          </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QLabel" name="label_noticias">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>300</y>
-      <width>411</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Baskerville Old Face</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);
+        </item>
+        <item>
+         <property name="text">
+          <string>Belo Horizonte</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brasília</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Boa Vista</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Campo Grande</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cuiabá</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Curitiba</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fortaleza</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Florianópolis</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Goiânia</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>João Pessoa</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Macapá</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Maceió</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Manaus</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Natal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Palmas</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Porto Velho</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Recife</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rio Branco</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rio de Janeiro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Salvador</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>São Luís</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>São Paulo</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Teresina</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vitória</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>3</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_capital_estado">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bookman Old Style</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F5F5F5;
 border-bottom: 1px solid;
 	border-bottom-color: #c3c3c3;
 border-right: 1px solid;
 	border-right-color: #c3c3c3;
 border-radius: 2px;
 </string>
-    </property>
-    <property name="lineWidth">
-     <number>3</number>
-    </property>
-    <property name="text">
-     <string>Notícias </string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::PlainText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>131</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>CAPITAIS</string>
-     </property>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Capital/Estado&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <property name="text">
-      <string>Aracaju</string>
-     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>144</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_previsao">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Baskerville Old Face</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F5F5F5;
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+        </property>
+        <property name="text">
+         <string>Previsão Tempo</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_data_hora">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Baskerville Old Face</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F5F5F5;
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+        </property>
+        <property name="text">
+         <string>Data/Hora</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <property name="text">
-      <string>Belém</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Belo Horizonte</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Brasília</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Boa Vista</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Campo Grande</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Cuiabá</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Curitiba</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Fortaleza</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Florianópolis</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Goiânia</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>João Pessoa</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Macapá</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Maceió</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Manaus</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Natal</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Palmas</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Porto Velho</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Recife</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Rio Branco</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Rio de Janeiro</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Salvador</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>São Luís</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>São Paulo</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Teresina</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Vitória</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>400</y>
-      <width>411</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_atualizar">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tempo">
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
 color: #black;
 border-right:  1px solid;
 	border-right-color: #6a6a6a;
 border-bottom: 1px solid;
 	border-bottom-color:#6a6a6a;
-background-color: rgb(170, 170, 255);
+background-color: #BFB43B;
 border-radius: 2px
 }
 
@@ -327,153 +399,111 @@ background-color: rgb(240, 240, 240);
 border-radius: 2px
 }
 </string>
-       </property>
-       <property name="text">
-        <string>Atualizar</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QLabel" name="label_capital_estado">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>60</y>
-      <width>261</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Bookman Old Style</family>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Capital/Estado&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_previsao">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>90</y>
-      <width>171</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Baskerville Old Face</family>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);</string>
-    </property>
-    <property name="text">
-     <string>Previsão Tempo</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::PlainText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_data_hora">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>90</y>
-      <width>81</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Baskerville Old Face</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);</string>
-    </property>
-    <property name="text">
-     <string>Data/Hora</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_proverbio">
-    <property name="geometry">
-     <rect>
-      <x>16</x>
-      <y>470</y>
-      <width>401</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 127);</string>
-    </property>
-    <property name="text">
-     <string>Provérbio</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>220</y>
-      <width>411</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <widget class="QLabel" name="label_8">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_tempo">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
+        </property>
+        <property name="text">
+         <string>Tempo</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_cotacao">
+      <property name="font">
+       <font>
+        <family>Baskerville Old Face</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #F5F5F5;
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+      </property>
+      <property name="text">
+       <string>Cotação</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_noticias">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Baskerville Old Face</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #F5F5F5;
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
+      <property name="text">
+       <string>Notícias </string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_atualizar">
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
 color: #black;
 border-right:  1px solid;
 	border-right-color: #6a6a6a;
 border-bottom: 1px solid;
 	border-bottom-color:#6a6a6a;
-background-color: rgb(170, 170, 255);
+background-color: #BFB43B;
 border-radius: 2px
 }
 
@@ -489,21 +519,117 @@ background-color: rgb(240, 240, 240);
 border-radius: 2px
 }
 </string>
-       </property>
-       <property name="text">
-        <string>Tempo</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_9">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+        </property>
+        <property name="text">
+         <string>Atualizar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_proverbio">
+      <property name="font">
+       <font>
+        <family>Baskerville Old Face</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #F5F5F5;
+border-bottom: 1px solid;
+	border-bottom-color: #c3c3c3;
+border-right: 1px solid;
+	border-right-color: #c3c3c3;
+border-radius: 2px;
+</string>
+      </property>
+      <property name="text">
+       <string>Provérbio</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: #043654</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_voltar">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+color: #black;
+border-right:  1px solid;
+	border-right-color: #6a6a6a;
+border-bottom: 1px solid;
+	border-bottom-color:#6a6a6a;
+background-color: #BFB43B;
+border-radius: 2px
+}
+
+QPushButton:pressed{
+color: black;
+border-left: 1px solid;
+	border-left-color: #c3c3c3;
+border-top: 1px solid;
+	border-top-color:#c3c3c3;
+border-right: transparent;
+border-bottom: transparent;
+background-color: rgb(240, 240, 240);
+border-radius: 2px
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Voltar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
