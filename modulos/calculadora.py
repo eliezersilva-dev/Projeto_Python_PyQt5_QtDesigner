@@ -168,7 +168,7 @@ def botao_voltar():
 
 app = QtWidgets.QApplication([])
 tela_calculadora = uic.loadUi('tela_calculadora.ui')
-tela_calculadora.setWindowIcon(QtGui.QIcon('imagens/calculadora-icon.png'))
+tela_calculadora.setWindowIcon(QtGui.QIcon('../imagens/calculadora-icon.png'))
 tela_calculadora.setWindowTitle('Calculadora')
 
 tela_calculadora.btn_C.clicked.connect(limpar_tela)

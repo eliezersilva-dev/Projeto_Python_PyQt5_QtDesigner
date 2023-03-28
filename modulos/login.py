@@ -5,7 +5,7 @@ usuarios = {'Maria': '123456', 'João': 'abcdef', 'Rose': '1ab2c3'}
 
 
 def login():
-    tela_login.widget_imagem_cadeado.setStyleSheet('image: url(imagens/cadeado_fechado.jpg)')
+    tela_login.widget_imagem_cadeado.setStyleSheet('image: url(../imagens/cadeado_fechado.jpg)')
     usuario_login = tela_login.lineEdit_usuario.text()
     senha_login = tela_login.lineEdit_senha.text()
 
@@ -15,7 +15,7 @@ def login():
         if usuarios[usuario_login] != senha_login:
             QMessageBox.about(tela_login, 'Alerta', 'Senha Inválida.')
         else:
-            tela_login.widget_imagem_cadeado.setStyleSheet('image: url(imagens/cadeado_aberto.jpg)')
+            tela_login.widget_imagem_cadeado.setStyleSheet('image: url(../imagens/cadeado_aberto.jpg)')
 
     tela_login.lineEdit_usuario.setText('')
     tela_login.lineEdit_senha.setText('')
@@ -51,10 +51,10 @@ def voltar():
 app = QtWidgets.QApplication([])
 tela_login = uic.loadUi('tela_login.ui')
 tela_login.setWindowTitle('Tela Login')
-tela_login.setWindowIcon(QtGui.QIcon('imagens/login_icon.png'))
-tela_login.widget_imagem_cadeado.setStyleSheet('image: url(imagens/cadeado_fechado.jpg)')
-tela_login.widget_imagem_usuario.setStyleSheet('image: url(imagens/imagem_usuario.png)')
-tela_login.widget_imagem_login.setStyleSheet('image: url(imagens/imagem_login.png)')
+tela_login.setWindowIcon(QtGui.QIcon('../imagens/login_icon.png'))
+tela_login.widget_imagem_cadeado.setStyleSheet('image: url(../imagens/cadeado_fechado.jpg)')
+tela_login.widget_imagem_usuario.setStyleSheet('image: url(../imagens/imagem_usuario.png)')
+tela_login.widget_imagem_login.setStyleSheet('image: url(../imagens/imagem_login.png)')
 
 tela_login.btn_cadastrar.clicked.connect(cadastrar)
 tela_login.btn_login.clicked.connect(login)

@@ -49,8 +49,8 @@ def botao_voltar():
 app = QtWidgets.QApplication([])
 tela_senha = uic.loadUi('tela_senha.ui')
 tela_senha.setWindowTitle('Gerar Senhas')
-tela_senha.setWindowIcon(QtGui.QIcon('imagens/senha-icon.png'))
-tela_senha.label_imagem_cadeado.setStyleSheet('image: url(imagens/senha-imagem.png)')
+tela_senha.setWindowIcon(QtGui.QIcon('../imagens/senha-icon.png'))
+tela_senha.label_imagem_cadeado.setStyleSheet('image: url(../imagens/senha-imagem.png)')
 
 tela_senha.btn_voltar.clicked.connect(botao_voltar)
 tela_senha.btn_gerar.clicked.connect(botao_gerar)

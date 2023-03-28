@@ -1,5 +1,4 @@
 from PyQt5 import uic, QtWidgets, QtGui
-from PyQt5.QtWidgets import QMessageBox
 
 
 def chamar_calculadora():
@@ -46,7 +45,7 @@ def chamar_tela_noticias():
 
 app = QtWidgets.QApplication([])
 tela_main = uic.loadUi('tela_main.ui')
-tela_main.setWindowIcon(QtGui.QIcon('imagens/application-icon.png'))
+tela_main.setWindowIcon(QtGui.QIcon('../imagens/application-icon.png'))
 tela_main.setWindowTitle('Projetos Python')
 
 tela_main.btn_calculadora.clicked.connect(chamar_calculadora)

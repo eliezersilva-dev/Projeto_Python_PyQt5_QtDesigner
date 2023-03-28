@@ -49,8 +49,8 @@ def voltar():
 app = QtWidgets.QApplication([])
 tela_lista = uic.loadUi('tela_lista.ui')
 tela_lista.setWindowTitle('Lista de Tarefas')
-tela_lista.setWindowIcon(QtGui.QIcon('imagens/lista-icon.png'))
-tela_lista.widget_img.setStyleSheet('image: url(imagens/lista_imagem)')
+tela_lista.setWindowIcon(QtGui.QIcon('../imagens/lista-icon.png'))
+tela_lista.widget_img.setStyleSheet('image: url(../imagens/lista_imagem)')
 
 tela_lista.btn_adicionar.clicked.connect(adicionar)
 tela_lista.btn_excluir.clicked.connect(excluir)

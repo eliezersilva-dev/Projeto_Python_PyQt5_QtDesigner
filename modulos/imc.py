@@ -35,7 +35,7 @@ def calcular_imc():
 
 app = QtWidgets.QApplication([])
 tela_imc = uic.loadUi('tela_imc.ui')
-tela_imc.setWindowIcon(QtGui.QIcon('imagens/imc-icon.png'))
+tela_imc.setWindowIcon(QtGui.QIcon('../imagens/imc-icon.png'))
 tela_imc.setWindowTitle('Calcular IMC')
 
 tela_imc.txt_peso.setInputMask('000,00')

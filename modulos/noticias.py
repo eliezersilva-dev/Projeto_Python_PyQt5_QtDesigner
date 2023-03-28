@@ -2,12 +2,11 @@ from PyQt5 import uic, QtWidgets, QtGui
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 from time import sleep
 import json
-from datetime import date, datetime
+from datetime import datetime
 import requests
 import random
 
@@ -42,11 +41,11 @@ def montar_listas_capitais():
     global capitais
     global estados
 
-    with open('arquivos/previsoes_capitais_brasil.txt', 'r', encoding="utf8") as arquivo_previsoes:
+    with open('../arquivos/previsoes_capitais_brasil.txt', 'r', encoding="utf8") as arquivo_previsoes:
         capitais = arquivo_previsoes.read()
         capitais = json.loads(capitais)
 
-    with open('arquivos/capitais_estados.txt', 'r', encoding="utf8") as arquivo_capitais:
+    with open('../arquivos/capitais_estados.txt', 'r', encoding="utf8") as arquivo_capitais:
         estados = arquivo_capitais.read()
         estados = json.loads(estados)
 
@@ -71,7 +70,7 @@ def buscar_cotacao():
 def montar_proverbios():
     global proverbios
 
-    with open('arquivos/proverbios.txt', 'r', encoding="utf8") as arquivo:
+    with open('../arquivos/proverbios.txt', 'r', encoding="utf8") as arquivo:
         proverbios = arquivo.readlines()
 
 
@@ -129,12 +128,13 @@ def botao_voltar():
     import main
     main.tela_main.show()
     app.exec()
+    tela_noticias.close()
 
 
 app = QtWidgets.QApplication([])
 tela_noticias = uic.loadUi('tela_noticias.ui')
 tela_noticias.setWindowTitle('Notícias')
-tela_noticias.setWindowIcon(QtGui.QIcon('imagens/informativo_icon.png'))
+tela_noticias.setWindowIcon(QtGui.QIcon('../imagens/informativo_icon.png'))
 
 tela_noticias.btn_tempo.clicked.connect(previsao_capital)
 tela_noticias.btn_atualizar.clicked.connect(chamar_atualizar)
